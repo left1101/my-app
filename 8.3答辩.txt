@@ -1,0 +1,12 @@
+第三周总结 
+	在这一周里我们主要学习了
+		1.蚂蚁金服Ui库 ant design
+		2.中间件的编写及应用 了解如何借用中间件来构建异步action
+		3.利用react-router创建路由 来进行无刷新跳转页面
+		4.数据的扁平化概念及实现
+
+	1.通过npm可以安装ant-design的UI组件 但是千万不要忘记还要引入antd.css否则其CSS样式将不会显示出来
+	2.在中间件编写时要注意参数的顺序 store=>next=>action=>{....}  而其中next与store.dispath是有区别的next（action）后是将其
+传递给下一个中间件 而store.dispath方法则是从头再来 而因此在applyMiddleware时也要注意中间件的插入顺序 那么在中间件实现中其中最关键
+的能够实现action异步的便是promise对象 也是因为通过axios产生的promise对象的状态来进行成功或失败的异步action
+	3.react-router通过引入Router组件和其routes属性来配置

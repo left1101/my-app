@@ -1,0 +1,6 @@
+.NavBar-wrap{
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid #eae3e3;
+  min-height: 30px;
+}

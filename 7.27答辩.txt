@@ -1,0 +1,36 @@
+    在第二周里我们主要做了两大工作
+	1.复习之前所学react组件化构建
+	2.学习Redux
+	
+    1.首先提到react组件 react组件是通过继承React.Compnent类来自定义组件，通过render()方法返回所需要的元素
+ 	在组件与组件之间数据进行交互时 刚开始时通过父组件向下传递props 子组件通过调用父组件事件来回调传递参数
+	但是通过这些回调会发现不便于管理因此引入了redux
+
+
+    2.redux通过将数据state和dispath方法触发reducer所引发事件类型集中起来使其更加容易掌控整个App的数据结构
+	2.1 Store : 通过createStore(reducer)生成
+		store对象包含reucer传来的默认参数state
+		包含dispatch（action）方法将一个action对象传给reducer处理
+		包含subscribe（fn）方法监听函数，一旦 State 发生变化自动执行
+		包含getState（）方法获取当前state
+
+
+  	2.2 Reducer : 是一个函数，它接受 Action 和当前 State 作为参数，返回一个新的 State。
+	     	通过switch(action.type)将state进行相应的操作最终返回新的state（注意不能直接操作原state需要备份）
+
+
+  	2.3 provider : 将Redux的store作为props传递给子孙组件上的connet
+	     	 在原有最顶层容器组件上包裹一层，使原来整个应用成为Provider的子组件
+
+
+  	2.4 connect ：连接 Redux 和 React，通过接收上面 Provider 提供的 store 里面的 state 和 dispatch
+	     	 提到connect就不得不提及mapStateToProps（state,ownProps）, mapDispatchToProps（dispatch,,ownProps）
+	      	 这两个函数参数 ,这两个函数参数可以将需要的state属性和dispatch方法传递给绑定的组件上作为props
+
+
+ 	 2.5 action : 改变 State 只能通过 action 每一个 action所返回的对象都必须是 Javascript Plain Object
+	  	action所返回对象中最少有一个type属性 也应该有一个payload传值属性
+
+	2.6 优化结构的工具函数
+	combineReducers({reducer1,reducer2})：可以将多个reducer打包合成一个reducer
+	bindActionCreators(actionCreators, dispatch)：将使用 dispatch 对每个 action creator 进行包装，以便可以直接调用它们。

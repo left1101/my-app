@@ -1,0 +1,26 @@
+.NavBarBtn-content{
+  display:flex;
+}
+.NavBarBtn-icon{
+  height: 21px;
+}
+.NavBarBtn-bottom{
+  display: flex;
+  justify-content: center;
+}
+.NavBarBtn-deraction{
+  width: 50%;
+  border-bottom: #FF2668 2px solid;
+  margin-top: 3px;
+}
+.NavBarBtn-wrap-select{
+  color:#FF2668;
+  display:flex;
+  flex-direction: column
+}
+
+.NavBarBtn-wrap-unselect{
+  color: black;
+  display:flex;
+  flex-direction: column
+}

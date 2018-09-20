@@ -1,0 +1,7 @@
+.ModeBar-wrap{
+  display: flex;
+  padding:15px;
+  padding-left: 0px;
+  box-sizing: border-box;
+  min-height: 50px;
+}

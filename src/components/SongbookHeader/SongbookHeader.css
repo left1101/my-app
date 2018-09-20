@@ -1,0 +1,36 @@
+.SongbookHeader-wrap{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:10px;
+  min-height:46px;
+}
+.SongbookHeader-left{
+  color: #FF2668;
+  display: flex;
+  align-items: center;
+  height: 22.5px;
+  width: 100px
+}
+.SongbookHeader-icon{
+  color: pink;
+  height:100%;
+  vertical-align:center;
+}
+.SongbookHeader-left span{
+  height:100%;
+  font-size: 16px;
+  margin-left: 5px;
+}
+.SongbookHeader-center{
+  font-weight:bold;
+  font-size:17px;
+  margin: 0 auto;
+  text-align: center
+}
+.SongbookHeader-right{
+  color: #FF2668;
+  font-size: 16px;
+  width: 100px;
+  text-align:right
+}

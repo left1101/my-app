@@ -1,0 +1,100 @@
+/* 整体布局 */
+
+.Player-wrap{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.Player-wrap-reverse{
+    display: flex;
+    width: 100%;
+    flex-direction: column-reverse;
+    margin-bottom: 20px;
+}
+
+.Player-top{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 13px;
+}
+.Player-bottom{
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    justify-content: center;
+}
+
+/* 滑动条 */
+
+.slider {
+    width: 70%; 
+    padding: 15px 18px;
+    margin: 0 auto;
+    user-select: none;
+}
+
+.sliderWrapperValue {
+    margin-left: .5em;
+    min-width: 24px;
+    color: #808080;
+    text-align: center;
+    font-size: 14px;
+}
+
+.sliderInner {
+    position: relative;
+    height: 2px;
+    background-color: #E9E9E9;
+}
+
+.sliderTrack {
+    height: 2px;
+    background-color:#FF2668;
+    position:absolute;
+}
+
+.sliderHandler {
+    position: absolute;
+    border: 1px solid #FF2668;
+    left: 0;
+    top: 50%;
+    width: 18px;
+    height: 18px;
+    margin-left: -14px;
+    margin-top: -10px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+/* 时间 */
+
+.time-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+/* 图标 */
+
+.Player-icon{
+    height: 20px;
+    width: 18px;
+}
+
+/* cutIcon-wrap */
+
+.Player-cutIcon-wrap{
+    display: flex;
+    position: absolute;
+    width: 100%;
+}
+
+.Player-cutIcon{
+    transform: translateX(-2px);
+    position: absolute;
+    height: 20px;
+    width: 7px;
+    top: -9px;
+}

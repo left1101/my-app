@@ -1,0 +1,11 @@
+.List-wrap{
+  padding:15px
+}
+
+.List-title{
+  font-family:PingFangSC-Semibold;
+  font-size:20px;
+  color:#333333;
+  text-align:left;
+  font-weight: bold;
+}

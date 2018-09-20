@@ -1,0 +1,57 @@
+.ModeBtnBlock-wrap{
+  display: flex
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomOut {
+  from {
+    width: 16px;
+    height: 16px;
+  }
+
+  100% {
+    width: 13px;
+    height: 13px;
+  }
+}
+.ModeBtnBlock-wrap{
+  height: 20px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.ModeBtnBlock-btn-wrap{
+  width: 20px;
+  height: 20px;
+  display:flex;
+  justify-content: center;
+  align-items:center
+}
+.ModeBtnBlock-btn-select{
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #FF2668;
+  animation: zoomIn 0.3s linear;
+}
+
+.ModeBtnBlock-btn-unselect{
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: grey;
+  animation: zoomOut 0.3s linear;
+}

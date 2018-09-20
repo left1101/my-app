@@ -1,0 +1,35 @@
+.ListItem-wrap{
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+
+.ListItem-icon{
+  width:100%;
+  height:100%;
+}
+
+.ListItem-icon-wrap{
+  width: 16px;
+  height: 16px;
+  margin-right:15px;
+}
+
+.multiple-select{
+  background: #FF2668;
+  display: flex;
+  border-radius: 50%;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  font-size: 12px;
+}
+
+.multiple-unselect{
+  background: rgb(242, 242, 242);
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+}

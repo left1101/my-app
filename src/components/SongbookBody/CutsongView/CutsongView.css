@@ -1,0 +1,53 @@
+.CutsongView-wrap{
+  height: 100%;
+  width:100%;
+  display: flex;
+  position: fixed;
+  top: 0;
+}
+
+.CutsongView-content{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: white;  
+}
+
+.CutsongView-workor{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 12px;
+    color:#333333;
+    height: 100px;
+    margin-bottom: 10px;
+}
+.CutsongView-workor-item{
+    display: flex;
+    flex-direction: column;
+}
+.CutsongView-workor-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:9px;
+}
+.CutsongView-workor-time{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.CutsongView-workor-icon{
+    height: 50px;
+    width: 50px;
+}
+.CutsongView-closebtn{
+  width: 100%;
+  background: #F9F9F9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:#5A5A5A;
+  height:50px;
+}
